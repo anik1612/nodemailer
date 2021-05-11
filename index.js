@@ -25,10 +25,10 @@ const mailOptions = {
 };
 
 // send mail
-transporter.sendMail(mailOptions, (info) => {
-	try {
-		console.log('Email sent: ' + info.response);
-	} catch (error) {
+transporter.sendMail(mailOptions, (error, info) => {
+	if (error) {
 		console.log(error);
+	} else {
+		console.log('Email sent: ' + info.response);
 	}
 });
