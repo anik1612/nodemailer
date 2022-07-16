@@ -15,11 +15,10 @@ const mailOptions = {
   from: 'sender@gmail.com',
   to: 'receiver@gmail.com',
   subject: 'Node Mailer Tester',
-  text: `Hi,
+  text: `Hi There,
         How are you? Hope so you are doing well. This mail is sent using nodemailer.
-
-        Thank You
-        Regards
+        
+		Thank You
         Anik Sarker`,
 };
 
